@@ -1,0 +1,93 @@
+.card-container{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: scroll;
+}
+.card{
+    min-width: 200px;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 80%;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    flex: 1;
+    background-color: #9a0411;
+}
+.details h3{
+    color: #FFF;
+    font-size: 2.2rem;
+}
+.details p{
+    display: none;
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.btn{
+    display: none;
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: bold;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 1rem;
+}
+.btn:hover{
+    color: #FFF;
+    background-color: transparent;
+}
+.details:hover p,
+.details:hover .btn{
+    display: block;
+}
+.details:hover{
+    height: 100%;
+    background-color: #9a0411c7;
+    position: absolute;
+}
+
+
+@media screen and (min-width: 768px){
+    .card-container{
+        justify-content: space-between;   
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .card-container{
+        gap: 2rem;
+    }
+    .section h2{
+        font-size: 4rem;
+    }
+    .details h3{
+        font-size: 3rem;
+    }
+    .details p,
+    .btn{
+        font-size: 1.3rem;
+    }
+}
+
+

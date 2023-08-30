@@ -1,0 +1,38 @@
+.us{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.us picture{
+    width: 100%;
+    max-height: 85vh;
+    overflow: hidden;
+}
+.us img{
+    width: 100%;
+    object-fit: cover;
+}
+.us p{
+    padding: 1rem;
+    color: #FFF;
+    background-color: #9a0411c7;
+}
+
+@media screen and (min-width: 640px){
+    .us{
+        display: flex;
+        align-items: center;
+    }
+    .us p{
+        position: absolute;
+        left: 50%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .us p{
+        padding: 2.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+

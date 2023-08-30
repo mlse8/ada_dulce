@@ -1,0 +1,49 @@
+.footer{
+    width: 100%;
+    height: max(25vh, 400px);
+    margin-top: 3rem;
+    position: relative;
+}
+video{
+    width: 100%;
+    height: 100%;
+    margin-bottom: -.5rem;
+    object-fit: cover;
+}
+.social{
+    width: 100%;
+    padding-bottom: 3.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 0rem;
+}
+.social img{
+    width: 2rem;
+    height: 2rem;
+}
+.footer p{
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media screen and (min-width: 768px){
+    .social{
+        padding-bottom: .5rem;
+        padding-right: 1rem;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+    .footer p{
+        text-align: left;
+    }
+}
+

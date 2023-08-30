@@ -1,0 +1,128 @@
+.header{
+    width: 100%;
+    height: max(75vh, 350px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar{
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: #E2E2E2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.checkbtn{
+    margin-top: .6rem;
+    cursor: pointer;
+}
+.logo-container{
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.logo-container a{
+    font-family: 'Deux-Deriche', sans-serif;
+    font-size: 2rem;
+}
+.navbar-nav{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 53px;
+    right: -100%;
+    transition: all .3s linear;
+}
+.navbar-nav a{
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: #E2E2E2;
+}
+.navbar-nav a:hover{
+    background-color: #e2e2e26c;
+    border-radius: .25rem;
+}
+input[type="checkbox"]:checked ~ .navbar-nav{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 53px);
+    background-color: #9a0411d5;
+    right: 0;
+}
+.title{
+    width: 100%;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    background-image: linear-gradient(50deg, #5d5d5db3, #00000063),url('../assets/img/cake.jpeg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.title h1{
+    margin: 1rem 0;
+    font-size: 5rem;
+    font-weight: 100;
+    color: #FFF;
+    text-shadow: -3px 2px 2px #000;
+}
+.title p{
+    width: 50%;
+    color: #FFF;
+    text-shadow: -2px 2px 1px #000;
+}
+
+
+@media screen and (min-width:768px){
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        position: static;
+    }
+    .navbar-nav a{
+        font-size: 1rem;
+        color: #222222;
+    }
+    .navbar-nav a:hover{
+        color: #E2E2E2;
+        background-color: #9a0411b4;
+    }
+    .checkbtn{
+        display: none;
+    }
+    .title h1{
+        font-size: 6rem;
+    }
+    .title p{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .logo-container a{
+        font-size: 2rem;
+    }
+    .navbar-nav a{
+        font-size: 1.2rem;
+    }
+    .title h1{
+        font-size: 7rem;
+    }
+    .title p{
+        font-size: 1.3rem;
+    }
+}
