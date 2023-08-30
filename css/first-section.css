@@ -29,6 +29,7 @@
     padding: 2rem;
     flex: 1;
     background-color: #9a0411;
+    transition: all .5s ease-out;
 }
 .details h3{
     color: #FFF;

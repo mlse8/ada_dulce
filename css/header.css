@@ -1,6 +1,6 @@
 .header{
     width: 100%;
-    height: max(75vh, 350px);
+    height: max(85vh, 350px);
     display: flex;
     flex-direction: column;
     align-items: center;
